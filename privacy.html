@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>개인정보 처리 및 데이터 보호 안내 - Hermes 개인 업무 자동화</title>
+  <style>
+    :root {
+      --bg-color: #fcfcfc;
+      --card-bg: #ffffff;
+      --text-main: #1f2328;
+      --text-muted: #59636e;
+      --border-color: #d1d9e0;
+      --link-color: #0969da;
+      --accent: #0969da;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-color: #0d1117;
+        --card-bg: #161b22;
+        --text-main: #e6edf3;
+        --text-muted: #8d96a0;
+        --border-color: #30363d;
+        --link-color: #4493f8;
+        --accent: #4493f8;
+      }
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+      line-height: 1.65;
+      padding: 2rem 1rem;
+      display: flex;
+      justify-content: center;
+    }
+    .container {
+      width: 100%;
+      max-width: 720px;
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 2rem;
+    }
+    header {
+      margin-bottom: 2rem;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 1.25rem;
+    }
+    h1 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .subtitle {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+    h2 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-top: 1.75rem;
+      margin-bottom: 0.75rem;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 0.35rem;
+    }
+    p {
+      margin-bottom: 0.9rem;
+      color: var(--text-main);
+      word-break: keep-all;
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+    li {
+      margin-bottom: 0.4rem;
+    }
+    .quote-box {
+      background: var(--bg-color);
+      border-left: 4px solid var(--accent);
+      padding: 0.85rem 1rem;
+      margin: 1.25rem 0;
+      border-radius: 0 4px 4px 0;
+      font-size: 0.95rem;
+    }
+    nav {
+      margin: 2rem 0 1rem 0;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border-color);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+    a {
+      color: var(--link-color);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    a:hover {
+      opacity: 0.8;
+    }
+    footer {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-top: 1.5rem;
+      border-top: 1px solid var(--border-color);
+      padding-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>개인정보 처리 및 데이터 보호 안내</h1>
+      <div class="subtitle">Hermes 개인 업무 자동화 (Privacy Policy)</div>
+    </header>
+
+    <main>
+      <section>
+        <p>
+          본 안내는 <strong>Hermes 개인 업무 자동화</strong>(이하 "본 시스템")가 개인 업무 지원 목적으로 Google 사용자 데이터를 접근, 보관, 처리하는 기준과 방침을 설명합니다. 본 시스템은 일반 사용자를 대상으로 가입을 받거나 판매하는 서비스가 아니며, 운영자 개인이 로컬 환경에서 단독으로 사용하는 업무 도구입니다.
+        </p>
+      </section>
+
+      <section>
+        <h2>1. 접근 및 조회하는 자료의 종류</h2>
+        <p>
+          본 시스템은 사용자가 명시적으로 허용한 OAuth 동의 범위(Scopes) 내에서 다음 자료를 필요에 따라 조회합니다.
+        </p>
+        <ul>
+          <li><strong>일정 정보:</strong> Google Calendar 이벤트 및 회의 일정</li>
+          <li><strong>이메일 내용:</strong> Gmail 수신함의 업무 관련 메일 및 스레드</li>
+          <li><strong>문서 및 스프레드시트:</strong> Google Drive, Google Docs, Google Sheets에 저장된 업무 파일</li>
+          <li><strong>통계 및 광고 데이터:</strong> Google Analytics, Google Search Console, Google Ads의 방문 통계 및 성과 수치</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>2. 자료의 이용 목적</h2>
+        <p>
+          접근한 자료는 오직 다음 목적으로만 이용됩니다.
+        </p>
+        <ul>
+          <li>개인 일정 및 업무 우선순위 요약</li>
+          <li>수신된 업무 메일 검토 및 회신 필요 사항 정리</li>
+          <li>스프레드시트 및 업무 문서 데이터 기반의 보고서 생성</li>
+          <li>광고 집행 성과 및 사이트 검색·유입 지표 분석 보고서 작성</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>3. 보관 및 외부 전송 관련 안내</h2>
+        <ul>
+          <li><strong>로컬 저장 원칙:</strong> 조회된 원본 데이터 및 분석 산출물은 기본적으로 운영자의 로컬 작업 환경에 저장됩니다.</li>
+          <li><strong>인증 토큰 관리:</strong> Google API 접근을 위해 발급받은 OAuth 인증 토큰은 로컬 환경에만 저장되며, 웹에 게시되거나 공개되지 않습니다.</li>
+          <li><strong>승인된 구독 LLM을 통한 처리:</strong> 업무 요약 및 분석 작업을 수행하는 과정에서, 사전에 운영자가 승인한 구독 AI 서비스로 필요한 자료를 전송하여 처리할 수 있습니다. 이 전송은 요청한 업무 요약과 분석을 위한 것이며, 구독 서비스의 데이터 처리 조건도 적용됩니다.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>4. 데이터 사용 제한 및 미제공 원칙</h2>
+        <p>
+          본 시스템은 신뢰할 수 있는 데이터 보호 기준을 준수하며, 다음 행위를 엄격히 금지합니다.
+        </p>
+        <ul>
+          <li>Google 사용자 데이터를 제3자에게 판매하거나 유상 양도하지 않습니다.</li>
+          <li>Google 사용자 데이터를 타깃 광고나 마케팅 목적으로 활용하지 않습니다.</li>
+          <li>Google 사용자 데이터를 범용 인공지능(AI)이나 기계학습(ML) 모델을 학습시키기 위한 용도로 제공하지 않습니다.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>5. Google API 사용자 데이터 정책 준수 (Limited Use)</h2>
+        <div class="quote-box">
+          <p>
+            Hermes 개인 업무 자동화의 Google API 사용 및 다른 앱으로의 정보 전송은 제한적 사용(Limited Use) 요건을 포함한 <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener noreferrer">Google API Services User Data Policy</a>를 준수합니다.
+          </p>
+          <p style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-muted);">
+            Hermes' use and transfer to any other app of information received from Google APIs will adhere to <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener noreferrer">Google API Services User Data Policy</a>, including the Limited Use requirements.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2>6. 연결 철회 및 데이터 삭제 권한</h2>
+        <p>
+          사용자는 언제든지 Google 계정 보안 설정(<a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer">Google 계정 권한 관리</a>)에서 본 시스템의 접근 권한을 철회할 수 있습니다. 권한 철회 시 본 시스템은 더 이상 Google 데이터에 접근할 수 없으며, 로컬 기기에 저장된 임시 데이터는 사용자가 직접 삭제하거나 운영자 연락처로 삭제를 요청할 수 있습니다.
+        </p>
+      </section>
+
+      <section>
+        <h2>7. 보증 한계 안내</h2>
+        <p>
+          이 도구는 모든 자료에 적용되는 고정 보관 기간을 정하지 않습니다. 운영자는 업무상 필요와 관련 의무를 고려하여 저장 자료를 삭제하거나 보관합니다. 이 안내는 모든 저장소와 처리 경로의 암호화를 보증하지 않습니다.
+        </p>
+      </section>
+
+      <nav>
+        <a href="index.html">&larr; Hermes 개인 업무 자동화 소개로 돌아가기</a>
+      </nav>
+    </main>
+
+    <footer>
+      <div>운영자: 최어빈 (개인 사용)</div>
+      <div>연락처: <a href="mailto:cebean.e@gmail.com">cebean.e@gmail.com</a></div>
+      <div>작성일: 2026-10-10</div>
+    </footer>
+  </div>
+</body>
+</html>
